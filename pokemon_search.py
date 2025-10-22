@@ -37,15 +37,16 @@ def get_pokemon_data(user_input):
         return None, None
 
 #user is asked to enter Pokemon name
-pokemon_name = input("Search up Pokemon: ")
-pokemon_info, pokemon_species = get_pokemon_data(pokemon_name)
+while True:
+    pokemon_name = input("Search up Pokemon: ")
+    pokemon_info, pokemon_species = get_pokemon_data(pokemon_name)
 
-if pokemon_info:
-    print(f"Name: {pokemon_info['name'].capitalize()}")
-    print(f"Pokedex #: {pokemon_info['id']}")
-    # print(f"{pokemon_info["height"]}")
-elif pokemon_species:
-    print(f"Name: {pokemon_species['name'].capitalize()}")
-    print(f"Pokedex #: {pokemon_species['id']}")
-else:
-    print("Pokemon not found.")
+    if pokemon_info:
+        print(f"Name: {pokemon_info['name'].capitalize()}")
+        print(f"Pokedex #: {pokemon_info['id']}")
+        # print(f"{pokemon_info["height"]}")
+    elif pokemon_species:
+        print(f"Name: {pokemon_species['name'].capitalize()}")
+        print(f"Pokedex #: {pokemon_species['id']}")
+    else:
+        print("Pokemon not found.")
