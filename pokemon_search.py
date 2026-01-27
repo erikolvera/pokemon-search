@@ -10,7 +10,6 @@ def search_pokemon_name(name):
     if response.status_code == 200:
         return response.json()
     return None
-        
 #test if searching up by pokemon species worked
 def search_pokemon_species(name):
     url = f"{base_url}/pokemon-species/{name}"
