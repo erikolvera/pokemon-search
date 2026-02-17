@@ -27,4 +27,5 @@ python3 pokemon_search.py
 ```
 
 ## Screenshot
-<img width="700" height="629" alt="pokemon_search_terminal" src="https://github.com/user-attachments/assets/800e637c-f608-4b53-970f-b3d413e6991a" />
+<img width="1701" height="955" alt="Screenshot 2026-02-16 at 9 57 57 PM" src="https://github.com/user-attachments/assets/33e5b420-7497-4fae-a4dd-656d605f14e5" />
+
